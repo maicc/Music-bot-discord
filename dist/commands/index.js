@@ -35,6 +35,7 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.commands = void 0;
 const ping = __importStar(require("./ping"));
+const help = __importStar(require("./help"));
 exports.commands = {
-    ping,
+    ping, help,
 };

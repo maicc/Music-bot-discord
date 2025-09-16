@@ -1,5 +1,5 @@
-services 
-  discord-bot: 
+services:
+discord-bot: 
   build: . 
   container_name: discord-bot
   restart: unless-stopped
