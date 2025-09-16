@@ -1,14 +1,15 @@
 services:
-discord-bot: 
-  build: . 
-  container_name: discord-bot
-  restart: unless-stopped
-  env_file: .env
-  environment: 
-    - NODE_ENV=production 
-    - TZ=America/Panama
-  loggin: 
-    driver: "json-file"
-    options: 
-      max-size: "10m"
-      max-file: "3"
+  discord-bot:
+    build:
+      context: .
+    container_name: discord-bot
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      TZ: America/Panama
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
